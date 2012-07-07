@@ -1,0 +1,2 @@
+install: $(TARGET)
+	sudo cp $(TARGET) $(TFCARD)/qttest
