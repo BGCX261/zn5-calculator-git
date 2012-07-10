@@ -1,2 +1,2 @@
 install: $(TARGET)
-	sudo cp $(TARGET) $(TFCARD)/qttest
+	sudo cp $(TARGET) $(TFCARD)/mpkgbox/zn5Cal/

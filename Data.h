@@ -7,6 +7,11 @@
 #include<vector>
 #include<iostream>
 #include<cmath>
+#include<sstream>
+#include<string>
+
+#include <stdio.h> 
+
 using namespace std;
 
 class item
@@ -31,6 +36,8 @@ class Data
 		bool isFunc(QString name);//判断是否是函数式
 		/*表达式合法检测*/
 		bool isValid(QString str);
+		/* 将浮点型数据转换成QString 小数点的位数为pre*/
+		QString stringFromDouble(long double d, int pre);
 	private:
 		//itemList mStrList;
 		vector<QString> stackList;

@@ -1,0 +1,109 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AbigB	Data.cpp	/^int Data::AbigB(QChar a, QChar b)\/*优先级比较 0相等 -1小于 1大于 *\/$/;"	f	class:Data
+CC	Makefile	/^CC	=	$(CROSS_COMPILE)gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS	=	-pipe -Wall -W -O3 -DNO_DEBUG$/;"	m
+CXX	Makefile	/^CXX	=	$(CROSS_COMPILE)g++$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS=	-pipe -DQWS -fno-exceptions -fno-rtti -Wall -W -O3 -DNO_DEBUG$/;"	m
+DATA_H_	Data.h	2;"	d
+DEBUG_H_	debug.h	2;"	d
+DIST	Makefile	/^DIST	=	$/;"	m
+Data	Data.cpp	/^Data::Data()$/;"	f	class:Data
+Data	Data.h	/^class Data$/;"	c
+GZIP	Makefile	/^GZIP	=	gzip -9f$/;"	m
+HEADERS	Makefile	/^HEADERS =	Data.h \\$/;"	m
+INCPATH	Makefile	/^INCPATH	=	-I$(QTDIR)\/include -I$(QTDIR)\/extern3rd\/include$/;"	m
+INTERFACES	Makefile	/^INTERFACES =	$/;"	m
+INTERFACE_DECL_PATH	Makefile	/^INTERFACE_DECL_PATH = .$/;"	m
+KEY_0	key.h	9;"	d
+KEY_1	key.h	10;"	d
+KEY_2	key.h	11;"	d
+KEY_3	key.h	12;"	d
+KEY_4	key.h	13;"	d
+KEY_5	key.h	14;"	d
+KEY_6	key.h	15;"	d
+KEY_7	key.h	16;"	d
+KEY_8	key.h	17;"	d
+KEY_9	key.h	18;"	d
+KEY_CENTER	key.h	27;"	d
+KEY_CLEAR	key.h	35;"	d
+KEY_DOWN	key.h	26;"	d
+KEY_HANGDOWN	key.h	38;"	d
+KEY_HANGUP	key.h	37;"	d
+KEY_LEFT	key.h	23;"	d
+KEY_NEXT	key.h	30;"	d
+KEY_PLAY	key.h	31;"	d
+KEY_PRE	key.h	29;"	d
+KEY_RIGHT	key.h	25;"	d
+KEY_SOFT_LEFT	key.h	33;"	d
+KEY_SOFT_RIGHT	key.h	34;"	d
+KEY_SPOND	key.h	20;"	d
+KEY_STAR	key.h	21;"	d
+KEY_UP	key.h	24;"	d
+KEY_VDOWN	key.h	41;"	d
+KEY_VUP	key.h	40;"	d
+LFLAGS	Makefile	/^LFLAGS	=	-Wl,-rpath $(QTDIR)\/lib -Wl,-rpath $(QTDIR)\/target\/lib$/;"	m
+LIBS	Makefile	/^LIBS	=	$(SUBLIBS) -L$(QTDIR)\/lib -L$(QTDIR)\/extern3rd\/lib -lm -lqte-mt -lezxappbase -lezxam $(LIBLINK)$/;"	m
+LINK	Makefile	/^LINK	=	$(CROSS_COMPILE)gcc$/;"	m
+MOC	Makefile	/^MOC	=	$(QTDIR)\/bin\/moc$/;"	m
+MZWIDGET_H_	mZWidget.h	2;"	d
+OBJECTS	Makefile	/^OBJECTS =	.obj\/Data.o \\$/;"	m
+OBJMOC	Makefile	/^OBJMOC	=	$/;"	m
+SOURCES	Makefile	/^SOURCES =	Data.cpp \\$/;"	m
+SRCMOC	Makefile	/^SRCMOC	=	$/;"	m
+TAR	Makefile	/^TAR	=	tar -cf$/;"	m
+TARGET	Makefile	/^TARGET	=	zn5Cal$/;"	m
+UIC	Makefile	/^UIC	=	$(QTDIR)\/bin\/uic$/;"	m
+UICDECLS	Makefile	/^UICDECLS =	$/;"	m
+UICIMPLS	Makefile	/^UICIMPLS =	$/;"	m
+_KEY_H	key.h	7;"	d
+ans	mZWidget.h	/^		QString ans;$/;"	m	class:mZWidget
+appPath	mZWidget.h	/^		QString appPath;$/;"	m	class:mZWidget
+bgImg	mZWidget.h	/^		QPixmap bgImg;$/;"	m	class:mZWidget
+cal	Data.cpp	/^QString Data::cal(QString _a, QString _b, QChar op)\/\/计算四则运算$/;"	f	class:Data
+calFunc	Data.cpp	/^QString Data::calFunc(QString funcName, QString _value)\/\/计算函数值$/;"	f	class:Data
+calResult	Data.cpp	/^double Data::calResult()\/\/根据后缀表达式，出栈求出结果$/;"	f	class:Data
+data	mZWidget.h	/^		Data *data;$/;"	m	class:mZWidget
+debug	debug.h	7;"	d
+debug_on	debug.h	6;"	d
+deleteEle	mZWidget.cpp	/^void mZWidget::deleteEle()$/;"	f	class:mZWidget
+drawButtonFunc	mZWidget.cpp	/^void mZWidget::drawButtonFunc(QPainter *p)$/;"	f	class:mZWidget
+drawButtonNum	mZWidget.cpp	/^void mZWidget::drawButtonNum(QPainter *p)$/;"	f	class:mZWidget
+express	mZWidget.h	/^		QString express;$/;"	m	class:mZWidget
+func	mZWidget.h	/^		enum {num, func}sta;\/\/处于的状态$/;"	e	enum:mZWidget::__anon1
+funcList	Data.h	/^		vector<QString> funcList;\/\/一些常用函数$/;"	m	class:Data
+funcStr	mZWidget.cpp	/^static QString funcStr[]={$/;"	v	file:
+genAns	Data.cpp	/^double Data::genAns(QString str)$/;"	f	class:Data
+genLast	Data.cpp	/^void Data::genLast()\/\/求解后缀表达式(只针对+-*\/())有效$/;"	f	class:Data
+getProgramDir	mZWidget.cpp	/^QString mZWidget::getProgramDir()$/;"	f	class:mZWidget
+initFuncList	Data.cpp	/^void Data::initFuncList()$/;"	f	class:Data
+isFunc	Data.cpp	/^bool Data::isFunc(QString name)$/;"	f	class:Data
+isOp	Data.h	/^		bool isOp;$/;"	m	class:item
+isOperator	Data.cpp	/^bool Data::isOperator(QChar ch)\/\/判断是否为操作符$/;"	f	class:Data
+isValid	Data.cpp	/^bool Data::isValid(QString str)$/;"	f	class:Data
+item	Data.cpp	/^item::item(QString _str, bool _isOp)$/;"	f	class:item
+item	Data.h	/^class item$/;"	c
+key	mZWidget.h	/^		int key;$/;"	m	class:mZWidget
+keyPressEvent	mZWidget.cpp	/^void mZWidget::keyPressEvent(QKeyEvent *e)$/;"	f	class:mZWidget
+keyPressed	mZWidget.h	/^		bool keyPressed;$/;"	m	class:mZWidget
+keyReleaseEvent	mZWidget.cpp	/^void mZWidget::keyReleaseEvent(QKeyEvent *e)$/;"	f	class:mZWidget
+mStrList	Data.h	/^		vector<item> mStrList;$/;"	m	class:Data
+mZWidget	mZWidget.cpp	/^mZWidget::mZWidget()$/;"	f	class:mZWidget
+mZWidget	mZWidget.h	/^class mZWidget : public ZWidget$/;"	c
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+num	mZWidget.h	/^		enum {num, func}sta;\/\/处于的状态$/;"	e	enum:mZWidget::__anon1
+outList	Data.h	/^		vector<item> outList;$/;"	m	class:Data
+paintEvent	mZWidget.cpp	/^void mZWidget::paintEvent(QPaintEvent *e)$/;"	f	class:mZWidget
+praserStr	Data.cpp	/^void Data::praserStr(QString str)\/\/分解出操作数和操作符$/;"	f	class:Data
+preCompile	Data.cpp	/^QString Data::preCompile(QString _str)$/;"	f	class:Data
+printList	Data.cpp	/^void Data::printList()$/;"	f	class:Data
+screenBuffer	mZWidget.h	/^		QPixmap screenBuffer;$/;"	m	class:mZWidget
+sta	mZWidget.h	/^		enum {num, func}sta;\/\/处于的状态$/;"	m	class:mZWidget	typeref:enum:mZWidget::__anon1
+stackList	Data.h	/^		vector<QString> stackList;$/;"	m	class:Data
+subList	Data.h	/^		vector<QString> subList;\/\/分解出的子串$/;"	m	class:Data
+value	Data.h	/^		QString value;$/;"	m	class:item
+~mZWidget	mZWidget.cpp	/^mZWidget::~mZWidget()$/;"	f	class:mZWidget

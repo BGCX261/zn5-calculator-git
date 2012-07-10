@@ -115,9 +115,14 @@ void mZWidget::keyPressEvent(QKeyEvent *e)
 			express+="/";
 			break;
 		case KEY_CENTER:
+			if(express.length() == 0){
+				ans = QString::fromUtf8("请输入表达式");
+				break;
+			}
 			if(data->isValid(express)){
 				ansNum = data->genAns(express);
-				ans = QString("=%1").arg(ansNum);
+				//ans = QString("=%1").arg(ansNum);
+				ans = data->stringFromDouble(ansNum, 8);
 			}else{
 				ans = QString::fromUtf8("表达式错误");
 			}

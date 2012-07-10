@@ -379,7 +379,8 @@ QString Data::cal(QString _a, QString _b, QChar op)//计算四则运算
 			*/
 		ans = pow(b, a);
 	}
-	QString ansStr = QString("%1").arg(ans);
+	//QString ansStr = QString("%1").arg(ans);
+	QString ansStr = stringFromDouble(ans, 10);
 	return ansStr;
 }
 
@@ -464,7 +465,8 @@ QString Data::calFunc(QString funcName, QString _value)//计算函数值
 	{
 		ans = log10(value);
 	}
-	return QString("%1").arg(ans);
+	//return QString("%1").arg(ans);
+	return stringFromDouble(ans, 10);
 }
 
 bool Data::isValid(QString str)
@@ -577,4 +579,28 @@ bool Data::isValid(QString str)
 	}
 over:
 	return ans;
+}
+
+QString Data::stringFromDouble(long double d, int pre)
+{
+	ostringstream out;
+	out.setf(ios::fixed, ios::floatfield);
+	out.precision(pre);
+	out<<d;
+	string str = out.str();
+	const char *chs = str.c_str();
+	QString strAns = chs;
+	/* 去掉结尾的0 */
+	while(strAns[strAns.length() - 1] == '0' 
+			|| strAns[strAns.length() - 1] =='.'
+			&& strAns.length() > 1)//排除掉0
+	{
+		int index = strAns.find('.');
+		if(index != -1){
+			strAns.remove(strAns.length() - 1, 1);
+		}else{
+			break;
+		}
+	}
+	return strAns;
 }
